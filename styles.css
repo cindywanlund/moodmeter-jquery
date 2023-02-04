@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+#mood-container {
+  width: 590px;
+  height: 490px;
+  padding: 20.8px 20.8px 14.4px 20.8px;
+  border: 2px solid black;
+}
+
+#moods {
+  /*background-color: lightpink;
+  height: 32px;*/
+  padding-top: 50px;
+  /*text-align: center;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mood-info {
+  text-align: center;
+  padding-top: 20px;
+}
+
+i {
+  cursor: pointer;
+  -webkit-font-smoothing: unset;
+  margin: 15px;
+}
+
+i:hover::before {
+  /*color: #f79a6c;*/
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease-out;
+}
+
+.fa-tired::before {
+  background-color: #f79a6c;
+  border-radius: 100%;
+}
+
+.fa-tired:hover::before {
+  background-color: #ff7530;
+}
+
+.fa-face-frown::before {
+  background-color: #ffcf7d;
+  border-radius: 100%;
+}
+
+.fa-face-frown:hover::before {
+  background-color: #ffb536;
+}
+
+.fa-face-meh::before {
+  background-color: #fae988;
+  border-radius: 100%;
+}
+
+.fa-face-meh:hover::before {
+  background-color: #ffe032;
+}
+
+.fa-face-smile::before {
+  background-color: #d3de89;
+  border-radius: 100%;
+}
+
+.fa-face-smile:hover::before {
+  background-color: #d1e933;
+}
+
+.fa-face-grin-wide::before {
+  background-color: #a7d9c4;
+  border-radius: 100%;
+}
+
+.fa-face-grin-wide:hover::before {
+  background-color: #43e4a1;
+}
+
+.button-container {
+  /*background-color: #d0ddd0;*/
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-help {
+  height: 52px;
+  border-radius: 50px;
+  margin: 15px 0px;
+  color: white;
+  background-color: #56a15f;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-help:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease-out;
+}
+
+.close-popup {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 955px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  text-decoration: none;
+}
